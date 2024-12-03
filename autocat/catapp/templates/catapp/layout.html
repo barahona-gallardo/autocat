@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% comment %} Bootstrap 5.3.3 {% endcomment %}
+    {% load bootstrap5 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    {% bootstrap_messages %}
+    {% load static %}
+    {% comment %} CSS {% endcomment %}
+    <link href="{% static "catapp/css/styles.css" %}" rel="stylesheet">
+    {% comment %} Bloque dinámico para títulos {% endcomment %}
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <header class="my-5">{% block header %}{% endblock header %}</header>
+    <main class="my-5">{% block main %}{% endblock main %}</main>
+    <footer class="my-5">{% block footer %}CatApp 2024 todos los derechos reservados.{% endblock footer %}</footer>
+</body>
+</html>

@@ -1,0 +1,12 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #212529;
+  text-align: center;
+  font-weight: 400;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  color: #f8f9fa;
+  scroll-behavior: smooth;
+}
